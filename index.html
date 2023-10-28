@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="survey-form">
+      <label class="form-label" for="first-name">First Name:</label>
+      <input class="form-field" type="text" id="first-name" required>
+
+      <label class="form-label" for="last-name">Last Name:</label>
+      <input class="form-field" type="text" id="last-name" required>
+
+      <label class="form-label" for="date-of-birth">Date of Birth:</label>
+      <input class="form-field" type="date" id="date-of-birth" required>
+
+      <label class="form-label" for="country">Country:</label>
+      <select class="form-field" id="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="USA">INDIA</option>
+        <option value="Canada">USA</option>
+        <option value="UK">UK</option>
+        <!-- Add more country options here -->
+      </select>
+
+      <label class="form-label">Gender:</label>
+      <label>
+        <input type="checkbox" name="gender" value="male"> Male
+      </label>
+      <label>
+        <input type="checkbox" name="gender" value="female"> Female
+      </label>
+
+      <label class="form-label" for="profession">Profession:</label>
+      <input class="form-field" type="text" id="profession" required>
+
+      <label class="form-label" for="email">Email:</label>
+      <input class="form-field" type="email" id="email" required>
+
+      <label class="form-label" for="mobile-number">Mobile Number:</label>
+      <input class="form-field" type="tel" id="mobile-number" required>
+
+      <button class="submit-button" type="button" onclick="submitForm()">Submit</button>
+      <button class="reset-button" type="button" onclick="resetForm()">Reset</button>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
